@@ -119,8 +119,3 @@ header>div, header>div>nav, #menu{
 .sessao1{
     background-color: #D9DBDB;
 }
-
-#menu>nav{
-    display: flex;
-    justify-content: right;
-}
