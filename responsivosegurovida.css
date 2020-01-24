@@ -1,0 +1,21 @@
+@media screen and (max-width: 480px){
+    #logotipo{
+        width: 50%;
+    }
+
+    #areausuario>nav>ul, #menu>nav>ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #areausuario>nav>ul>li:nth-child(even), #menu>nav>ul>li:nth-child(even){
+        display: none;
+    }
+
+    header>#menu, header>#menu, header>#areausuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

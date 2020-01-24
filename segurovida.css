@@ -1,6 +1,7 @@
 * {
     padding: 0;
-    margin: 0;    
+    margin: 0;
+    font-family: 'Roboto', sans-serif;   
 }
 
 header{
@@ -11,7 +12,6 @@ header{
     height: 100%;
     text-align: center;
 }
-
 .page-header {
     background: #9AD46C;
     padding: 20px;
@@ -24,7 +24,8 @@ header{
     margin-top: 20px;    
     display: flex;
     flex-direction: column;
-    padding-left: 30px;      
+    padding-left: 30px;  
+    
 
 }
 
@@ -33,17 +34,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 200px;
+    
 }
 
 .conteudo li {
     max-width: 800px;
 }
 
-article h2 h {
-    text-align: center;
-    margin-top: 50px;
-}
 
 h2, article {
     margin-top: 20px;
@@ -81,6 +78,15 @@ footer{
     text-align: center;
 
 }
+
+footer{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #82B36B;
+    text-align: center;
+    
+}
 footer>p{
     margin-top: 0;
     padding-top: 1%;
@@ -92,7 +98,7 @@ footer>ul{
     display: flex;
     justify-content: center;
 }
-footer>ul>li>img{
+footer>ul>li>a>img{
     width: 50px;
 }
 #areausuario{
@@ -101,32 +107,27 @@ footer>ul>li>img{
    justify-content: right;
    background-color: white;
 }
-#areausuario>nav>ul{
+#areausuario>nav>ul, #menu>nav>ul{
     display: flex;
     justify-content: right;
     text-align: right;
 }
 
-#areausuario>nav>ul>li:last-child, #menu>ul>li:last-child{
-    margin-right: 40px;
-}
-
-#areausuario>nav>ul>li, #menu>ul>li, footer>ul>li{
+#areausuario>nav>ul>li, #menu>nav>ul>li, footer>ul>li{
     list-style-type: none;
-    margin-left: 15px;
+    margin-right: 15px;
     font-weight: bold;
     color: #2D3437;
 }
 
 #menu{
-    text-align: right;
     width: 100%;
-    display: flex;
-    justify-content: right;
     background-color: #82B36B;
 }
-#menu>ul{
+
+header>div, header>div>nav, #menu{
     display: flex;
+    justify-content: right;
 }
 
 
