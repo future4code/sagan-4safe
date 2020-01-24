@@ -1,17 +1,14 @@
-header{
-    background-color: #3B4F66;
-    color: #9AD46C;
-}
 body {
     background-color: whitesmoke;
     font-family: 'Roboto Slab'
 }
-main{
+
+main {
     text-align: center;
 }
 
 .section1 {
-    background-image: url('pics/image.png');
+    background-image: url('img/background-seguro-auto.png');
     background-size: cover; 
     background-repeat: no-repeat;
     width: auto;
@@ -58,17 +55,12 @@ h4{
     margin-bottom: 2vh;
 }
 
-button{
+.conteudo-banner button {
     background-color: white;
     color: black;
     font-weight: bolder;
     padding: 10px;
     border-width: 10;
-}
-
-footer {
-    background-color: #3B4F66;
-    color: #9AD46C
 }
 
 @media screen and (max-width: 420px) {
