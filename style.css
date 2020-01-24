@@ -30,6 +30,11 @@ section{
 #logotipo{
     width: 20%;
 }
+@media screen and (max-width: 480px){
+    #logotipo{
+        width: 50%;
+    }
+}
 footer{
     grid-row-start: 5;
     grid-column-start: 1;
@@ -49,7 +54,7 @@ footer>ul{
     display: flex;
     justify-content: center;
 }
-footer>ul>li>img{
+footer>ul>li>a>img{
     width: 50px;
 }
 #areausuario{
@@ -58,34 +63,64 @@ footer>ul>li>img{
    justify-content: right;
    background-color: white;
 }
-#areausuario>nav>ul{
+#areausuario>nav>ul, #menu>nav>ul{
     display: flex;
     justify-content: right;
     text-align: right;
 }
-
-#areausuario>nav>ul>li:last-child, #menu>ul>li:last-child{
-    margin-right: 40px;
+@media screen and (max-width: 480px){
+    #areausuario>nav>ul, #menu>nav>ul{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #areausuario>nav>ul>li:nth-child(even), #menu>nav>ul>li:nth-child(even){
+        display: none;
+    }
 }
+@media screen and (max-width:480px){
+    header>#menu, header>#menu, header>#areausuario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* #areausuario>nav>ul>li:last-child, #menu>nav>ul>li:last-child{
+    
+} */
 
-#areausuario>nav>ul>li, #menu>ul>li, footer>ul>li{
+#areausuario>nav>ul>li, #menu>nav>ul>li, footer>ul>li{
     list-style-type: none;
-    margin-left: 15px;
+    margin-right: 15px;
     font-weight: bold;
     color: #2D3437;
 }
+@media screen and (max-width: 480px){
+    #areausuario>nav>ul>li, #menu>nav>ul>li, footer>ul>li{
+        margin-bottom: 10px;
+        text-align: center;
+        font-family: bold;
+        font-size: 30px
+    }
+}
+
 
 #menu{
-    text-align: right;
     width: 100%;
-    display: flex;
-    justify-content: right;
     background-color: #82B36B;
 }
-#menu>ul{
+
+header>div, header>div>nav, #menu{
     display: flex;
+    justify-content: right;
 }
 
 .sessao1{
     background-color: #D9DBDB;
+}
+
+#menu>nav{
+    display: flex;
+    justify-content: right;
 }
